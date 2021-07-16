@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+}
+.title-bar{
+    height: 4vh;
+    background-color:  #107c41;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.menu-bar{
+    height: 4vh;
+    display: flex;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #107c41;
+    color: #fff;
+}
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.menu-item:hover{
+    border-bottom: none;
+    cursor: pointer;
+    background-color: #0b552c;
+}
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+.menu-icon-bar{
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 246, 246);
+}
+.menu-icon{
+    color: rgb(63, 62, 62);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+.menu-icon:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.menu-icon.selected{
+    transform: scale(1.2);
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    background-color: rgb(252, 246, 246);
+}
+.into-percentage{
+    font-size: 1.5rem;
+}
+.partition:hover{
+    cursor: default;
+    transform: scale(1);
+}
+.page-zoom{
+    height: 60%;
+    width: 5vw;
+    font-size: 12px;
+    padding-left: 1.5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: rgb(252, 246, 246);
+}
+.font-family-selector{
+    border: none;
+    width: 10vw;
+    outline: none;
+    background-color: rgb(252, 246, 246);
+}
+.font-size-selector{
+    border: none;
+    width: 3vw;
+    outline: none;
+    background-color: rgb(252, 246, 246);
+}
+.formula-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 246, 246);
+}
+.formula-editor{
+    height: 70%;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 2px;
+}
+.function-sign{
+    height: 70%;
+    margin-left: 0.5vw;
+    margin-bottom: 3px;
+}
+.selected-cell{
+    width: 8vw;
+    margin-left: 1vw;
+}
+.formula-input{
+    margin-left: 2px;
+    width: 86vw;
+    display: flex;
+    align-items: center;
+    color: rgb(87, 85, 85);
+    font-size: 13px;
+    outline: none;
+    padding-left: 5px;
+}
+.data-container{
+    height: 76vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-all{
+    width: 3vw;
+    height: 3.5vh;
+    border: 1px solid lightgrey;
+}
+.column-name-container{
+    width: 97vw;
+    height: 3.5vh;
+    border: 1px solid lightgrey;
+    display: flex;
+    overflow: hidden;
+}
+.column-name{
+    min-width: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(100, 100, 100);
+    border-right: 1px solid lightgrey ;
+    font-size: 14px;
+}
+.row-name-container{
+    width: 3vw;
+    height: 72.5vh;
+    border: 1px solid lightgrey;
+    overflow: hidden;
+}
+.row-name{
+    min-height: 3vh;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(100, 100, 100);
+    border-bottom: 1px solid lightgrey ;
+}
+.input-cell-container{
+    height: 72.5vh;
+    width: 97vw;
+    border: 1px solid lightgrey;
+    display: flex;
+    overflow: scroll;
+}
+.input-cell{
+    min-height: 3vh;
+    min-width: 6vw;
+    border-bottom: 1px solid lightgrey ;
+    border-right: 1px solid lightgrey ;
+    font-size: 12px;
+    outline-color: #107c41;
+}
+.input-cell.selected{
+    border: 2px solid #107c41;
+}
+.sheet-bar{
+    height: 4vh;
+    display: flex;
+    background-color: #fff;
+}
+.icon-left-scroll, .icon-right-scroll{
+    font-size: 30px;
+}
+.icon-left-scroll:hover, .icon-right-scroll:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.icon-add{
+    color: #107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    width: 30px;
+}
+.icon-add:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.sheet-tab-container{
+    border: 1px solid lightgrey;
+    width: 91.75vw;
+    display: flex;
+}
+.sheet-tab{
+    padding-top: 2px;
+    width: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 2px solid #107c41;
+}
+.sheet-tab:hover{
+    cursor: default;
+    background-color: rgb(235, 231, 231);
+}
+/* to select multiple cells */
+.top-cell-selected{
+    border-top: none;
+}
+.bottom-cell-selected{
+    border-bottom: 1px solid lightgrey;
+}
+.right-cell-selected{
+    border-right: 1px solid lightgrey;
+}
+.left-cell-selected{
+    border-left: none;
+}
